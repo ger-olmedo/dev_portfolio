@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <title>Portfolio Website</title>
+</head>
+<body>
+  <section>
+    <!---logo-->
+    <nav>
+      <img src="img/init.JPG" alt="Iniciales">
+    
+    <!---menu-->
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="mailto:ger.olmedo@hotmail.com">Contact me</a></li>
+        </ul>
+    <!---bars-->
+        <div class="toggle"></div>
+    </nav>
+    <!--textos-->
+    <div class="text-container">
+      <p>Hola,</p>
+      <p>Soy Germán</p>
+      <p>Freelance en Diseño <br>& Desarrollo Front-end.</p>
+      <button class="hire-btn">Hire me</button>
+      <button class="down-cv">Download CV</button>
+    <!--foto de perfil-->
+    </div>
+    <img  class="model" src="img/Imagen 1.png" alt="foto de perfil">
+  </section>
+
+  <div class="about-container">
+  <!--foto about-->
+      <img src="img/about_me.png" alt="foto-about">
+  <!--about me text-->
+    <div class="about-text">
+      <p>About Me</p>
+      <p>Diseñador Front-end</p>
+      <p>Hola, Mi nombre es Germán Olmedo. Soy Developer Front-end y me apasiona el diseño. Te garantizo resultados de satisfacción en cada proyecto que emprendo.</p>
+      <p>Si tienes algún proyecto para tu negocio, no dudes en contactarme. Lo realizaré, lo antes posible.</p>
+      <button>Hire me</button>
+      <button>Download CV</button>
+    </div>
+  </div>
+  <!--service container-->
+  <div class="services">
+    <div class="service-text">
+      <p>Services</p>
+      <p>Qualites Requaid</p>
+      <p>f you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want make a software for your bussniess conatact me.I make as soon</p>
+    </div>
+
+    <!--cajas de servicios-->
+    <div class="box-container">
+      <div class="box-1">
+        <span>1</span>
+        <p class="heading">Web Design</p>
+        <p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want.</p>
+        <button>Read More</button>
+      </div>
+      <div class="box-2">
+        <span>2</span>
+        <p class="heading">Web Devoloment</p>
+        <p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want.</p>
+        <button>Read More</button>
+      </div>
+      <div class="box-3">
+        <span>3</span>
+        <p class="heading">Segurity SEO</p>
+        <p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+  <!--- tienes un proyecto en mente-->
+    <div class="contact-me">
+      <p>If You Have Any Project In Your Mind ?</p>
+      <button><a href="mailto:ger.olmedo@hotmail.com">Contact me</a></button>
+    </div>
+    <!--footer-->
+  <footer>
+    <p>Germán Olmedo.</p>
+    <p>I makeas soon as possibale.You really like my work,if you don&#8217;t i change this until you like I give you seticfaction result</p>
+    <!--social-->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="far fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p class="copyright">Copyright by Germán Olmedo.</p>
+  </footer>
+    <!--social-attach-bar-->
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="far fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <!--JQuery-->
+    <script type="text/javascript" src="js/JQuery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+		  $('.toggle').click(function(){
+			  $('.toggle').toggleClass('active')
+			  $('nav').toggleClass('active')
+		    })
+	    });
+    
+    </script>
+
+</body>
+</html>
