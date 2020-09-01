@@ -320,38 +320,82 @@ footer p:nth-child(2){
     text-align: center;
     
 }
-.social-icons a {
-    width: 40px;
-    height: 40px;
+/*social bar*/
+.container-btn i {
+    opacity: 0;
+    font-size: 28px;
+    color: #1f1e1e;
+    will-change: transform;
+    transform: scale(.1);
+    transition: all .3s ease;
+}
+.btn-wrap {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e6e3e3;
-    margin: 20px 10px;
-    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    width: 280px; height: 72px;
+    background-color: #eeeeed;
+    border-radius: 80px;
+    padding: 0 18px;
+    will-change: transform;
+    transition: all .2s ease-in-out;
+    margin: auto;
 }
-.social-icons {
+.btn-wrap:hover {
+    transform: scale(1.1);
+}
+#btn-sp {
+    position: absolute; z-index: 99;
+    width: 280px; height: 72px;
+    border-radius: 80px; 
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #eeeeed;
+    background-color: #1f1e1e;
+    padding: 0 18px;
+    transition: all 1.2s ease;
+}
+.container-btn {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 280px;
+    height: 64px;
+    border-radius: 80px;
 }
-.social-icons i, .social i {
-    color: #000000;
+.container-btn i:nth-of-type(1) {
+    transition-delay: .8s;
 }
-.social-icons a:hover {
-    background-color: #000000;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    transition: all ease 0.5s;
+.container-btn i:nth-of-type(2) {
+    transition-delay: .6s;
 }
-.social-icons a:hover i,
-.social a:hover i {
-    color: #ffffff;
-    transition: all ease 0.5s;
+.container-btn i:nth-of-type(3) {
+    transition-delay: .4s;
+}
+.container-btn i:nth-of-type(4) {
+    transition-delay: .2s;
+}
+.btn-wrap:hover span {
+    transition-delay: .25s;
+    transform: translateX(-320px);
+}
+.btn-wrap:hover i {
+    opacity: 1;
+    transform: scale(1);
 }
 .copyright {
     color: #565555;
     font-size: 12px;
     position: absolute;
+    padding-top: 10px;
     left: 50%;
-    bottom: 10px;
+    bottom: 5px;
     transform: translateX(-50%);
 }
 .social {
@@ -373,14 +417,16 @@ footer p:nth-child(2){
     border: 1px solid #cbcbcb;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
-.social a:hover {
-    background-color: #000000;
-    transition: all ease 0.5s;
-}
 .social i {
     font-size: 20px;
-    color: #2b2b2b;
+    text-decoration: none;
 }
+.social a:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
 /* responsive*/
 
 @media (max-width: 1000px) {
